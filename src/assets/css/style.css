@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+header{
+    display: flex;
+    width: 100%;
+    padding: var(--spacing-spacing-base, 16px) var(--spacing-spacing-lg, 32px);
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #E5E7EB;
+    background: #FFF;
+
+}
+
+header .functions{
+    align-items: center;
+    gap: 16px;
+        
+}
+
+header .functions .btn-subscriptions{
+    border:none;
+
+    padding: 0 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 4px;
+    background: #F60;
+    transition: all 0.5s;
+
+}
+
+header .functions .btn-subscriptions:hover{
+    background: #FD8535;
+
+}
+
+header .functions .btn-subscriptions p{
+    color: #FEFEFE;
+    text-align: right;
+    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+header .functions .btn-subscriptions svg{
+    width: 25px;
+    height: 25px;
+
+}
+
+header .functions .btn-subscriptions svg path{
+    stroke: white;
+
+}
+
+header .functions .user{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-spacing-base, 16px);
+
+}
+
+header .functions .user .progress-bar{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 36px;
+    border: 2px solid rgba(209, 213, 219, 1);
+    border-right: 2px solid #f60;
+    border-top: 2px solid #f60;
+    text-align:center;
+
+}
+
+header .functions .user .progress-bar img{
+    width: 2rem;
+    border-radius: 2rem;
+    margin-top:4.25px
+
+}
+
+header .functions .user  p{
+    color: #0F3679;
+    text-align: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+
+
