@@ -105,7 +105,7 @@ header .functions .user  p{
 .container-center{
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px;
+    padding: 20px;
 
 }
 
@@ -493,6 +493,11 @@ header .functions .user  p{
 
 }
 
+.graph .item{
+    color: white;
+
+}
+
 .graph .item:first-child{
     border-radius: 4px 0 0 4px;
 
@@ -509,6 +514,7 @@ header .functions .user  p{
 }
 
 .graph .item:last-child{
+    color: #1A1C20;
     background: #E4F1FA;
     border-radius: 0 4px 4px 0;
 
@@ -517,29 +523,120 @@ header .functions .user  p{
 nav{
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px 24px;
+    position: relative;
+
+    padding: 40px;
+    padding-left: 0;
+    padding-right: 40px;
+
+    
 
 }
+
+
 
 .left-links{
     border-right: 1px solid #E5E7EB;
-    border-left: 1px solid;
     font-size: large;
     gap:16px;
-
-}
-
-.left-links .link .container-icon{
-    padding: 10px;
-
-}
-
-.left-links .link{
-    align-items: center;
+    
 
 }
 
 .left-links svg{
     align-self: flex-end;
+
+}
+
+.left-links .link{
+    align-items: center;
+    color:#0D5EAF;
+    background-color: white;
+    width: 100%;
+
+    padding-right: 8px;
+
+}
+
+.link p{
+    margin:0;
+    margin-left: 10px;
+}
+
+.left-links .link .container-icon{
+    padding: 10px;
+    height: 24px;
+    width: 24px;
+}
+
+.left-links .link:nth-child(4) .container-icon svg path{
+    stroke:none;
+
+}
+
+.left-links .link .container-icon svg path{
+    stroke:#0F6ECD;
+
+}
+
+.left-links .link:hover{
+    background-color: #F2F9FD;
+
+}
+
+.left-links .link:active{
+    background-color: white;
+
+}
+
+.left-links .link:active .container-icon{
+    background-color: #0D5EAF;
+
+}
+
+.left-links .link:active .container-icon svg path{
+    stroke:white;
+
+}
+
+.left-links .link:nth-child(4):active svg path{
+    stroke:none;
+    fill:white;
+
+}
+
+.right-info{
+    position:relative;
+    background: #F2F9FD;
+    padding: var(--spacing-spacing-xl, 48px) var(--spacing-spacing-md, 24px) var(--spacing-spacing-lg, 32px) var(--spacing-spacing-md, 24px);
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex-shrink: 0;
+
+}
+
+.right-info .mini-header-right h3{
+    color: #0F3679;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.right-info svg{
+    align-self: flex-start;
+
+}
+
+.right-info .mini-header-right p{
+    color: #092049;
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 10%;
+    font-style: normal;
+    font-weight: 400;
 
 }
