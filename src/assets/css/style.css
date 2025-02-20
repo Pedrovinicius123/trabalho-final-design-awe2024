@@ -34,7 +34,7 @@ header .functions .btn-subscriptions{
 
     border-radius: 4px;
     background: #F60;
-    transition: all 0.5s;
+    transition: all 0.3s;
 
 }
 
@@ -154,7 +154,7 @@ header .functions .user  p{
     font-family: "Inter";
 
     color:#0F3679;
-    transition: all 500ms;
+    transition: all 300ms;
 
 }
 
@@ -176,7 +176,7 @@ header .functions .user  p{
 
 .btn-edit svg path{
     stroke: #0F3679;
-    transition: stroke, 400ms;
+    transition: stroke, 300ms;
 
 }
 
@@ -623,6 +623,7 @@ nav{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-bottom: 4px;
 
 }
 
@@ -635,8 +636,155 @@ nav{
     color: #092049;
     font-family: "Roboto";
     font-size: 14px;
-    line-height: 10%;
     font-style: normal;
     font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 34px
 
+}
+
+.right-info .mini-header-right{
+    margin-bottom: 32px;
+
+}
+
+.right-info .tasks{
+    flex-direction: column;
+    gap: 16px;
+
+}
+
+.right-info .tasks .task{
+    align-items: center;
+    color: #0C2B61;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+    gap: 14px;
+    border-radius: 6px;
+    border: 1px solid #FEFEFE;
+    background: #FEFEFE;
+    box-shadow: -2px 2px 6px 0px rgba(15, 54, 121, 0.15);
+
+    padding: 16px;
+
+}
+
+.right-info .tasks .task .icon-info .icon{
+    background-color: #E7EBF2;
+    padding: 10px;
+
+    text-align:center;
+
+    width: 30px;
+    height: 30px;
+    border-radius:37px;
+
+}
+
+.right-info .tasks .task .icon-info{
+    height:45px;
+
+}
+
+.right-info .tasks .task .icon-info .icon svg{
+    margin-top:0.4em;
+
+}
+
+.right-info .tasks .task .icon-info .icon svg path{
+    stroke: #0D5EAF;
+
+}
+
+.right-info .tasks .task .icon-info .info{
+    position: relative;
+    background-color: #0F3679;
+    color: white;
+    font-weight: 400;
+
+    width: 1.25em;
+    height: 1.25em;
+
+    font-size: 12px;
+    padding:3px;
+    text-align:center;
+
+    border-radius: 1.25em;
+    left: 30px;
+    top: -55px;
+
+}
+
+.right-info .tasks .task:hover{
+    background-color:#0D5EAF;
+    color: white;
+    transition:all 300ms;
+
+}
+
+.right-info .tasks .task:hover .icon-info .icon{
+    background-color: #0D5EAF;
+    border: 1px solid #E5E7EB;
+
+}
+
+.right-info .tasks .task:hover .icon-info .icon svg path{
+    stroke: white;
+
+}
+
+.right-info .tasks .task:hover .icon-info .info{
+    background-color: #0D5EAF;    
+
+}
+
+.right-info .recent{
+    flex-direction: column;
+    width: 302px;
+
+}
+
+.right-info .recent .header-recent{
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.right-info .recent .header-recent a{
+    color: #092049;
+    text-decoration: underline;
+
+}
+
+.right-info .recent .activity{
+    background: #FEFEFE;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    padding: 16px;
+
+}
+
+.right-info .recent .activity h4{
+    color: #3F5E94;
+    margin-top: 0;
+
+}
+
+.right-info .recent .activity p{
+    color: #494E57
+
+}
+
+.right-info .recent .activity small{
+    color: #797D84;
+
+}
+
+.right-info .recent .activity:hover{
+    background-color: #E3F4FE;
+    transition: all 300ms;
 }
